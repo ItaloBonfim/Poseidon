@@ -1,17 +1,10 @@
 package com.LeagueSocial;
 
-import java.text.SimpleDateFormat;
-import java.util.Arrays;
-import java.util.Date;
-
-import com.LeagueSocial.Domain.*;
 import com.LeagueSocial.Repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import com.LeagueSocial.Domain.enums.KindSex;
 
 @SpringBootApplication
 public class LeagueSocialApplication implements CommandLineRunner {
@@ -29,7 +22,7 @@ public class LeagueSocialApplication implements CommandLineRunner {
 	@Autowired
 	private ProductRepository productRepository;
 	@Autowired
-	private FallowingRepository fallowingRepository;
+	private AssociatesRepository fallowingRepository;
 
 
 	public static void main(String[] args) {
@@ -38,7 +31,7 @@ public class LeagueSocialApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		
+	/*
 		SimpleDateFormat SDF = new SimpleDateFormat("dd/MM/yyyy");
 		SimpleDateFormat SDFF = new SimpleDateFormat("dd/MM/yyyy");
 
@@ -84,7 +77,7 @@ public class LeagueSocialApplication implements CommandLineRunner {
 	//	stateRepository.saveAll(Arrays.asList(stateSp, stateRj, stateDf, stateEs, stateSc));
 	//	cityRepository.saveAll(Arrays.asList(citySp, cityRj, cityDf, cityEs, citySc));
 	//	addressRepository.saveAll(Arrays.asList(addressSp1, addressRj, addressRj2, addressSp2, addressDf));
-		
+
 		
 		Category fps = new Category(null, "First Person Shooter");
 		Category esporte = new Category(null, "Esporte");
@@ -100,7 +93,7 @@ public class LeagueSocialApplication implements CommandLineRunner {
 		Product sf = new Product(null,  "Streat Fighter 6", 170.00); //combate
 		Product mk = new Product(null,"Mortal Kombat", 79.50); //combate
 		Product sc = new Product(null, "SoulCalibur", 79.90); //combate
-		
+
 		fps.getProduct().addAll(Arrays.asList(cs,rs6,overwatch));
 		esporte.getProduct().addAll(Arrays.asList(pes,fifa));
 		estrategia.getProduct().addAll(Arrays.asList(lol,rs6));
@@ -118,6 +111,9 @@ public class LeagueSocialApplication implements CommandLineRunner {
 		
 	//	categoryRepository.saveAll(Arrays.asList(fps, esporte, estrategia, combate));
 	//	productRepository.saveAll(Arrays.asList(cs, rs6, overwatch, pes, fifa, lol, sf,mk,sc));
-		
+
+
+	 */
+
 	}
 }

@@ -3,7 +3,9 @@ package com.LeagueSocial.Services;
 
 import java.util.Optional;
 
+import com.LeagueSocial.Services.Profile.ProductProfileService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 
 import com.LeagueSocial.Domain.Product;
@@ -11,36 +13,43 @@ import com.LeagueSocial.Repositories.ProductRepository;
 import com.LeagueSocial.Services.Exceptions.ObjectNotFoundException;
 
 @Service
-public class ProductService {
+public class ProductService implements ProductProfileService {
 	
 	@Autowired
 	private ProductRepository repo;
-	
-	public Product SelectData(Integer id) {
-		
-		Optional<Product> obj = repo.findById(id);
-		//Lambda Expression
-		return obj.orElseThrow(() -> new ObjectNotFoundException(
-				"Object not found, please verify Id:" +id+ ", Tipo:" + Product.class.getName()));
-		
+
+	@Override
+	public Product SelectDate(Integer id) {
+		return null;
 	}
 
-	public Product InsertData(Product obj){
-
-		obj.setId(null);// -> to ensure a new register on database without not affect another present register
-		return repo.save(obj); // -> return the response with successfully or failed operation
+	@Override
+	public Product InsertData(Product obj) {
+		return null;
 	}
 
-	public Product UpdateData(Product obj){
-
-		SelectData(obj.getId());
-		return repo.save(obj);
+	@Override
+	public Product DeleteDate(Integer id) {
+		return null;
 	}
 
-	public void DeleteData(Integer id){
-
-		SelectData(id);
-		repo.deleteById(id);
+	@Override
+	public Product UpdateData(Product obj) {
+		return null;
 	}
 
+	@Override
+	public Product AllProducts() {
+		return null;
+	}
+
+	@Override
+	public Page<Product> PaginationFilter(Integer page, Integer linesPerPage, String orderBy, String direction) {
+		return null;
+	}
+
+	@Override
+	public Product ExtendUpdateData(Product Obj) {
+		return null;
+	}
 }

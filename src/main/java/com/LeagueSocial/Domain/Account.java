@@ -4,15 +4,20 @@ import java.io.Serializable;
 import java.util.*;
 
 import javax.persistence.*;
-import javax.transaction.Transactional;
 
 import com.LeagueSocial.Domain.enums.KindSex;
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import org.hibernate.annotations.Cascade;
+import lombok.*;
+
 
 
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@RequiredArgsConstructor
+@Getter
+@Setter
+@Data
 public class Account implements Serializable {
 	private static final long serialVersionUID = 1L;
 
@@ -20,14 +25,20 @@ public class Account implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "pk_user")
 	private Integer id;
+	@NonNull
 	private String name;
+	@NonNull
 	private String username;
-	@JsonIgnore
+
+	@NonNull
 	private Integer kind;// Codigo de genero no pacote Enums / estudar a viabilidade do campo de genero sexual
-	@JsonIgnore
+
+	@NonNull
 	private String email;
-	@JsonIgnore
+
+	@NonNull
 	private String password;
+
 	private String description;
 
 	@JsonIgnore
@@ -35,79 +46,12 @@ public class Account implements Serializable {
 	@CollectionTable(name = "telephone")
 	private Set<String> telephone = new HashSet<>();
 
-	public Account() {}
 
-	public Account(Integer id, String name, String username, KindSex kind, String email, String password) {
-		this.id = id;
-		this.name = name;
-		this.username = username;
-		this.kind = (kind == null) ? null : kind.getCod();
-		this.email = email;
-		this.password = password;
+	public void setSexualType(KindSex typeS){
+		this.kind = typeS.getCod();
 	}
-
-	public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getUsername() {
-		return username;
-	}
-
-	public void setUsername(String username) {
-		this.username = username;
-	}
-
-	public KindSex getKind() {
+	public KindSex getSexualType(){
 		return KindSex.toEnum(kind);
-	}
-
-	public void setKind(KindSex kind) {
-		this.kind = kind.getCod();
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
-	public String getDescription() {
-		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
-	}
-
-	public Set<String> getTelephone() {
-		return telephone;
-	}
-
-	public void setTelephone(Set<String> telephone) {
-		this.telephone = telephone;
 	}
 
 	@Override

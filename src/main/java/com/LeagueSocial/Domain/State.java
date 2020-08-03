@@ -11,12 +11,17 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import lombok.*;
 
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@Data
 public class State implements Serializable{
 	private static final long serialVersionUID = 1L;
-	
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
@@ -26,36 +31,6 @@ public class State implements Serializable{
 	@OneToMany(mappedBy = "state")
 	private List<City> city = new ArrayList<>(); //Array list
 	
-	public State() {}
-
-	public State(Integer id, String name) {
-		this.id = id;
-		this.name = name;
-	}
-
-	public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public List<City> getCity() {
-		return city;
-	}
-
-	public void setCity(List<City> city) {
-		this.city = city;
-	}
 
 	@Override
 	public int hashCode() {

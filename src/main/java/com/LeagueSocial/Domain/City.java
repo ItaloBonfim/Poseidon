@@ -10,8 +10,14 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import lombok.*;
 
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@Data
 public class City implements Serializable{
 	private static final long serialVersionUID = 1L;
 
@@ -24,38 +30,6 @@ public class City implements Serializable{
 	@ManyToOne
 	@JoinColumn(name = "state_id")
 	private State state;
-	
-	public City() {}
-
-	public City(Integer id, String name, State state) {
-		this.id = id;
-		this.name = name;
-		this.state = state;
-	}
-
-	public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public State getState() {
-		return state;
-	}
-
-	public void setState(State state) {
-		this.state = state;
-	}
 
 	@Override
 	public int hashCode() {
@@ -81,6 +55,4 @@ public class City implements Serializable{
 			return false;
 		return true;
 	}
-	
-	
 }

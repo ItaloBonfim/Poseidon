@@ -11,8 +11,14 @@ import javax.persistence.ManyToOne;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.*;
 
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@Data
 public class Address implements Serializable{
 	private static final long serialVersionUID = 1L;
 
@@ -34,82 +40,6 @@ public class Address implements Serializable{
 	@JoinColumn(name = "cidade_id")
 	private City city;
 	
-	public Address() {}
-
-	public Address(Integer id, String street, String zipCode, String number, String district, String complement, Account account, City city) {
-		this.id = id;
-		this.street = street;
-		this.zipCode = zipCode;
-		this.number = number;
-		this.district = district;
-		this.complement = complement;
-		this.account = account;
-		this.city = city;
-	}
-
-	public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
-	}
-
-	public String getStreet() {
-		return street;
-	}
-
-	public void setStreet(String street) {
-		this.street = street;
-	}
-
-	public String getZipCode() {
-		return zipCode;
-	}
-
-	public void setZipCode(String zipCode) {
-		this.zipCode = zipCode;
-	}
-
-	public String getNumber() {
-		return number;
-	}
-
-	public void setNumber(String number) {
-		this.number = number;
-	}
-
-	public String getDistrict() {
-		return district;
-	}
-
-	public void setDistrict(String district) {
-		this.district = district;
-	}
-
-	public String getComplement() {
-		return complement;
-	}
-
-	public void setComplement(String complement) {
-		this.complement = complement;
-	}
-
-	public Account getAccount() {
-		return account;
-	}
-
-	public void setAccount(Account account) {
-		this.account = account;
-	}
-
-	public City getCity() {
-		return city;
-	}
-
-	public void setCity(City city) {
-		this.city = city;
-	}
 
 	@Override
 	public int hashCode() {

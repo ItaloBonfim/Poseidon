@@ -1,6 +1,12 @@
 package com.LeagueSocial.Resources;
 
+/*
+ * Classe end-point relacionada a Categorias de a tipos de jogos na base
+ * Classe padrão de implementação da interface categoryProfileResource
+ */
+
 import com.LeagueSocial.DTO.CategoryDTO;
+import com.LeagueSocial.Resources.Profile.CategoryProfileResource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
@@ -10,32 +16,25 @@ import com.LeagueSocial.Domain.Category;
 import com.LeagueSocial.Services.CategoryService;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import javax.validation.Valid;
 import java.net.URI;
-import java.text.SimpleDateFormat;
-import java.util.List;
-import java.util.stream.Collectors;
+
 
 @RestController
 @RequestMapping(value = "/category")
-public class CategoryResource {
+public class CategoryResource implements CategoryProfileResource {
 	
 	@Autowired
 	private CategoryService service;
-	
-	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
-	public ResponseEntity<Category> Select(@PathVariable Integer id){
-		
-		Category obj = service.SelectData(id);
-		
+
+
+	@Override
+	public ResponseEntity<Category> Select(Integer id) {
+		Category obj = service.SelectDate(id);
 		return ResponseEntity.ok().body(obj);
 	}
 
-	@RequestMapping(method = RequestMethod.POST)
-	public ResponseEntity<Void> Insert(@Valid @RequestBody CategoryDTO objDTO){
-
-		Category obj = service.FromDataTransferObject(objDTO);
-
+	@Override
+	public ResponseEntity<Void> Insert(Category obj) {
 		obj = service.InsertData(obj);
 
 		URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
@@ -44,47 +43,26 @@ public class CategoryResource {
 		return ResponseEntity.created(uri).build();
 	}
 
-
-	@RequestMapping(value = "/{id}", method = RequestMethod.PUT)
-	public ResponseEntity<Void> Update(@Valid @RequestBody CategoryDTO objDTO, @PathVariable Integer id){
-
-		Category obj = service.FromDataTransferObject(objDTO);
-
-		obj.setId(id); // -> to ensure we update a existing register on database
-		obj = service.UpdateData(obj); // -> call the method in class Category on package Service to update a existing register
-
-		return ResponseEntity.noContent().build(); // -> return a null content
-
-	}
-
-	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-	public ResponseEntity<Void> Delete(@PathVariable Integer id){
-
-		service.DeleteData(id);
+	@Override
+	public ResponseEntity<Void> Delete(Integer id) {
+		service.DeleteDate(id);
 		return ResponseEntity.noContent().build();
 	}
 
-	//this method is sophisticated, utilizes DTO and convert all categories results in DOMAIN to DTO
-	@RequestMapping(method = RequestMethod.GET)
-	public ResponseEntity<List<CategoryDTO>> ShowCategories(){
+	@Override
+	public ResponseEntity<Category> Update(CategoryDTO objDTO, Integer id) {
 
-		List<Category> list = service.AllCategories(); //-> return a List with all categories
-
-		List<CategoryDTO> listDTO = list.stream().map(obj -> new CategoryDTO(obj)).collect(Collectors.toList());
-		return ResponseEntity.ok().body(listDTO);
+		Category obj = service.ExtendUpdateData(objDTO);
+		return ResponseEntity.noContent().build();
 	}
 
-	@RequestMapping(value = "page", method = RequestMethod.GET)
-	public ResponseEntity<Page<CategoryDTO>> PageFilter(
-			@RequestParam(value = "page", defaultValue = "0") Integer page,
-			@RequestParam(value = "linesPerPage", defaultValue = "24") Integer linesPerPage,
-			@RequestParam(value = "orderBy", defaultValue = "name") String orderBy,
-			@RequestParam(value = "direction", defaultValue = "ASC") String direction){
-
-		Page<Category> list = service.PaginationFilter(page, linesPerPage, orderBy, direction); //-> return a List with all categories
-
-		Page<CategoryDTO> listDTO = list.map(obj -> new CategoryDTO(obj));
-		return ResponseEntity.ok().body(listDTO);
+	@Override
+	public ResponseEntity<Category> AllCategories() {
+		return null;
 	}
 
+	@Override
+	public ResponseEntity<Page<Category>> Filter(Integer page, Integer linesPerPage, String orderBy, String direction) {
+		return null;
+	}
 }
