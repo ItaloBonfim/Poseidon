@@ -1,5 +1,6 @@
 package com.LeagueSocial.Resources.Profile;
 
+import com.LeagueSocial.DTO.AssociatesDTO;
 import com.LeagueSocial.Domain.Associates;
 import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
@@ -15,11 +16,11 @@ public interface AssociatesProfileResource {
     @RequestMapping(value = "/track/{id}", method = RequestMethod.GET)
     public ResponseEntity<List<Associates>> AllTrack(@PathVariable Integer id);
 
-    @RequestMapping(method = RequestMethod.POST)
-    public ResponseEntity<Associates> Insert(@RequestBody Associates obj);
+    @RequestMapping(value = "newAssociates/", method = RequestMethod.POST)
+    public ResponseEntity<Associates> Insert(@RequestBody AssociatesDTO obj);
 
-    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-    public ResponseEntity<Associates> Delete(@PathVariable Integer id);
+    @RequestMapping(value = "/unfollow", method = RequestMethod.DELETE)
+    public ResponseEntity<Associates> Delete(@RequestBody AssociatesDTO obj);
 
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
     public ResponseEntity<Associates> Update(@RequestBody Associates newData, @PathVariable Integer id);

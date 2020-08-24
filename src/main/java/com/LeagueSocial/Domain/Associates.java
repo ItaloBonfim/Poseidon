@@ -3,18 +3,23 @@ package com.LeagueSocial.Domain;
 import lombok.*;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Objects;
 
 @Entity(name = "Associations")
 @NoArgsConstructor
 @AllArgsConstructor
+@RequiredArgsConstructor
 @Getter
 @Setter
+@Data
 public class Associates implements Serializable {
 
     @Id
-    private Integer id; // dar uma jeito de remover esse campo da entidade
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
     @NonNull
     @ManyToOne
     @JoinColumn(name = "pk_user")
@@ -22,9 +27,11 @@ public class Associates implements Serializable {
 
     @NonNull
     @ManyToOne
-    @JoinColumn(name = "pk_target")
+    @JoinColumn(name = "pk_target",unique = true)
     private Account target;
 
+    @NonNull
+    @NotNull
     private Boolean isBlocked;
 
     @Override

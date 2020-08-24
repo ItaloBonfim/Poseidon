@@ -38,10 +38,11 @@ public class AccountResource implements AccountProfileResource {
 
 		System.out.println(obj.toString());
 
-		service.InsertData(obj);
+		//service.InsertData(obj);
 
 		URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
 				.path("/{id}").buildAndExpand(obj.getId()).toUri();
+
 		return ResponseEntity.created(uri).build();
 
 	}
