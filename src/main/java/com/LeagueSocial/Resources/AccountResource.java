@@ -3,6 +3,7 @@ package com.LeagueSocial.Resources;
 import com.LeagueSocial.DTO.AccountDTO;
 import com.LeagueSocial.Domain.Account;
 import com.LeagueSocial.Resources.Profile.AccountProfileResource;
+import com.LeagueSocial.Services.Profile.AccountProfileService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
@@ -22,44 +23,43 @@ import java.net.URI;
 public class AccountResource implements AccountProfileResource {
 
 	//linked on respective class on package Services
+
 	@Autowired
-	private AccountService service;
+	private AccountProfileService objective;
 
 
 	@Override
 	public ResponseEntity<Account> Select(Integer id) {
 
-		Account obj = service.SelectDate(id);
+		Account obj = objective.SelectDate(id);
+		//Account obj = service.SelectDate(id);
 		return ResponseEntity.ok().body(obj);
 	}
 
 	@Override
 	public ResponseEntity<Account> Insert(Account obj) {
 
-		System.out.println(obj.toString());
-
-		//service.InsertData(obj);
+		Account register = objective.InsertData(obj);
 
 		URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
-				.path("/{id}").buildAndExpand(obj.getId()).toUri();
+				.path("/{id}").buildAndExpand(register.getId()).toUri();
 
 		return ResponseEntity.created(uri).build();
+
 
 	}
 
 	@Override
 	public ResponseEntity<Account> Delete(Integer id) {
 
-		service.DeleteDate(id);
+		objective.DeleteDate(id);
 		return ResponseEntity.noContent().build();
 	}
 
 	@Override
-	public ResponseEntity<Account> Update(Account newData, Integer id) {
-		newData.setId(id);
+	public ResponseEntity<Account> Update(Account obj, Integer id) {
 		//System.out.println(newData.toString());
-		service.UpdateData(newData);
-
+		objective.UpdateData(obj, id);
 
 		return ResponseEntity.noContent().build();
 	}

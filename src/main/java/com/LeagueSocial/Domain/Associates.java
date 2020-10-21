@@ -1,6 +1,7 @@
 package com.LeagueSocial.Domain;
 
 import lombok.*;
+import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -27,11 +28,10 @@ public class Associates implements Serializable {
 
     @NonNull
     @ManyToOne
-    @JoinColumn(name = "pk_target",unique = true)
+    @JoinColumn(name = "pk_target" )//não permite que o sistema cadastre outros target com o mesmo id
     private Account target;
 
     @NonNull
-    @NotNull
     private Boolean isBlocked;
 
     @Override

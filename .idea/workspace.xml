@@ -14,23 +14,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed6d9458-443a-449c-9334-13e7f2dc367d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/DTO/AccountDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/DTO/AccountDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Domain/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Domain/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Domain/Associates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Domain/Associates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Domain/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Domain/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Domain/Publication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Domain/Publication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Domain/util/Login.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Repositories/AssociatesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Repositories/AssociatesRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Resources/AccountResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Resources/AccountResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Resources/AssociatesResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Resources/AssociatesResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Resources/CategoryResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Resources/CategoryResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Resources/Exceptions/ResourceExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Resources/Exceptions/ResourceExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Resources/Profile/AssociatesProfileResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Resources/Profile/AssociatesProfileResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Resources/Profile/AccountProfileResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Resources/Profile/AccountProfileResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Services/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Services/AccountService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Services/AssociatesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Services/AssociatesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Services/Profile/AccountProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Services/Profile/AccountProfileService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Services/Profile/AssociatesProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Services/Profile/AssociatesProfileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/DTO/AccountDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/DTO/AccountDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Domain/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Domain/Account.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Domain/Associates.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Domain/Associates.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Domain/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Domain/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Domain/Publication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Domain/Publication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Domain/util/Login.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Repositories/AssociatesRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Repositories/AssociatesRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Resources/AccountResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Resources/AccountResource.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Resources/AssociatesResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Resources/AssociatesResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Resources/CategoryResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Resources/CategoryResource.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Resources/Exceptions/ResourceExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Resources/Exceptions/ResourceExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Resources/Profile/AssociatesProfileResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Resources/Profile/AssociatesProfileResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Resources/Profile/AccountProfileResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Resources/Profile/AccountProfileResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Services/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Services/AccountService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Services/AssociatesService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Services/AssociatesService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Services/Profile/AccountProfileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Services/Profile/AccountProfileService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Services/Profile/AssociatesProfileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Services/Profile/AssociatesProfileService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +88,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -132,111 +147,116 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1598214550450">
+    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1603058937937">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="486" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1360.728@0.0.1360.728" timestamp="1593566557313" />
-    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1598214550450" />
-    <state x="363" y="101" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1596156223349">
+    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1603058937937" />
+    <state x="363" y="101" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600532137336">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="363" y="101" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1596156223349" />
-    <state x="266" y="290" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1595094431771">
+    <state x="363" y="101" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1600532137336" />
+    <state x="266" y="290" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1603072477069">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="265" y="290" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1360.728@0.0.1360.728" timestamp="1592753158870" />
-    <state x="266" y="290" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1595094431771" />
-    <state x="72" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1595806545487">
+    <state x="266" y="290" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1603072477069" />
+    <state x="266" y="290" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1600023175905" />
+    <state x="72" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1599845974542">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="72" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1595806545487" />
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597014918384">
+    <state x="72" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1599845974542" />
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602995479065">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1597014918384" />
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1602995479065" />
     <state width="406" height="438" key="DebuggerActiveHint" timestamp="1597970233387">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="406" height="438" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1597970233387" />
-    <state x="129" y="55" width="1092" height="610" maximized="true" key="DiffContextDialog" timestamp="1595790036408">
+    <state x="129" y="55" width="1092" height="610" maximized="true" key="DiffContextDialog" timestamp="1601515096771">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="128" y="55" key="DiffContextDialog/0.0.1360.728@0.0.1360.728" timestamp="1592781867420" />
-    <state x="129" y="55" width="1092" height="610" maximized="true" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1595790036408" />
-    <state width="1323" height="323" key="GridCell.Tab.0.bottom" timestamp="1598235709030">
+    <state x="129" y="55" width="1092" height="610" maximized="true" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1601515096771" />
+    <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1600011059718">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1317" height="236" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1593566689642" />
-    <state width="1323" height="323" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598235709030" />
-    <state width="1323" height="323" key="GridCell.Tab.0.center" timestamp="1598235709030">
+    <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1600011059718" />
+    <state width="1323" height="123" key="GridCell.Tab.0.bottom" timestamp="1603243053443">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1317" height="236" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1593566689637" />
-    <state width="1323" height="323" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1598235709030" />
-    <state width="1323" height="323" key="GridCell.Tab.0.left" timestamp="1598235709030">
+    <state width="1323" height="123" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1603243053443" />
+    <state width="1323" height="232" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603059773920" />
+    <state width="1323" height="123" key="GridCell.Tab.0.center" timestamp="1603243053443">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1317" height="236" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1593566689637" />
-    <state width="1323" height="323" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1598235709030" />
-    <state width="1323" height="323" key="GridCell.Tab.0.right" timestamp="1598235709030">
+    <state width="1323" height="123" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1603243053443" />
+    <state width="1323" height="232" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1603059773920" />
+    <state width="1323" height="123" key="GridCell.Tab.0.left" timestamp="1603243053443">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1317" height="236" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1593566689637" />
-    <state width="1323" height="323" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598235709030" />
-    <state width="1323" height="323" key="GridCell.Tab.1.bottom" timestamp="1598235709031">
+    <state width="1323" height="123" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1603243053443" />
+    <state width="1323" height="232" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1603059773920" />
+    <state width="1323" height="123" key="GridCell.Tab.0.right" timestamp="1603243053443">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="323" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598235709031" />
-    <state width="1323" height="323" key="GridCell.Tab.1.center" timestamp="1598235709030">
+    <state width="1323" height="123" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1603243053443" />
+    <state width="1323" height="232" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603059773920" />
+    <state width="1323" height="244" key="GridCell.Tab.1.bottom" timestamp="1601340631236">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="323" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1598235709030" />
-    <state width="1323" height="323" key="GridCell.Tab.1.left" timestamp="1598235709030">
+    <state width="1323" height="244" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601340631236" />
+    <state width="1323" height="244" key="GridCell.Tab.1.center" timestamp="1601340631236">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="323" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1598235709030" />
-    <state width="1323" height="323" key="GridCell.Tab.1.right" timestamp="1598235709030">
+    <state width="1323" height="244" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1601340631236" />
+    <state width="1323" height="244" key="GridCell.Tab.1.left" timestamp="1601340631236">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="323" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1598235709030" />
-    <state x="263" y="99" key="IDE.errors.dialog" timestamp="1597014706140">
+    <state width="1323" height="244" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1601340631236" />
+    <state width="1323" height="244" key="GridCell.Tab.1.right" timestamp="1601340631236">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="263" y="99" key="IDE.errors.dialog/0.0.1366.728@0.0.1366.728" timestamp="1597014706140" />
-    <state x="397" y="72" key="RollbackChangesDialog" timestamp="1595790044205">
+    <state width="1323" height="244" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1601340631236" />
+    <state x="263" y="99" key="IDE.errors.dialog" timestamp="1598567622889">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="806" y="30" key="RollbackChangesDialog/0.0.1360.728@0.0.1360.728" timestamp="1592781869816" />
-    <state x="397" y="72" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1595790044205" />
+    <state x="263" y="99" key="IDE.errors.dialog/0.0.1366.728@0.0.1366.728" timestamp="1598567622889" />
+    <state x="397" y="72" key="RollbackChangesDialog" timestamp="1601515100188">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="397" y="72" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1601515100188" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1595708733179">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1595708733179" />
-    <state x="493" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592750494135">
-      <screen x="0" y="0" width="1360" height="728" />
-    </state>
-    <state x="493" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1360.728@0.0.1360.728" timestamp="1592750494135" />
-    <state x="495" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1591570913311" />
-    <state x="232" y="93" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1593963485023">
+    <state x="293" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1599855991004">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="232" y="93" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1366.728@0.0.1366.728" timestamp="1593963485023" />
-    <state x="92" y="92" width="1176" height="544" maximized="true" key="dock-window-1" timestamp="1592761302361">
-      <screen x="0" y="0" width="1360" height="728" />
-    </state>
-    <state x="92" y="92" width="1176" height="544" maximized="true" key="dock-window-1/0.0.1360.728@0.0.1360.728" timestamp="1592761302361" />
-    <state width="602" height="275" key="javadoc.popup" timestamp="1593905473731">
+    <state x="293" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1599855991004" />
+    <state x="495" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598923315426">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="602" height="275" key="javadoc.popup/0.0.1366.728@0.0.1366.728" timestamp="1593905473731" />
+    <state x="495" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1598923315426" />
+    <state x="246" y="0" width="871" height="716" key="dock-window-1" timestamp="1601512509765">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="246" y="0" width="871" height="716" key="dock-window-1/0.0.1366.728@0.0.1366.728" timestamp="1601512509765" />
+    <state x="274" y="0" key="new project wizard" timestamp="1600011073444">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="274" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1600011073444" />
+    <state x="459" y="123" key="refactoring.ChangeSignatureDialog" timestamp="1601603627152">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="459" y="123" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1601603627152" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1595785314734">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1595785314734" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1597969299204">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1603065464436">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1597969299204" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1603065464436" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1601266402843" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

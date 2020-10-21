@@ -5,7 +5,10 @@ package com.LeagueSocial.Services.Profile;
 */
 
 import com.LeagueSocial.Domain.Account;
+import com.LeagueSocial.Domain.Publication;
 import org.springframework.data.domain.Page;
+
+import java.util.function.Consumer;
 
 public interface AccountProfileService {
 
@@ -15,11 +18,8 @@ public interface AccountProfileService {
 
     public void DeleteDate(Integer id);
 
-    public Account UpdateData(Account obj);
-
-    public Account AllAccounts();
+    public Account UpdateData(Account obj, Integer id);
 
     public Page<Account> PaginationFilter(Integer page, Integer linesPerPage, String orderBy, String direction);
 
-    public Account ExtendUpdateData(Account Obj);
 }

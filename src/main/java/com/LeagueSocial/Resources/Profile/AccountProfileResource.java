@@ -23,7 +23,7 @@ public interface AccountProfileResource {
     public ResponseEntity<Account> Delete(@PathVariable Integer id);
 
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
-    public ResponseEntity<Account> Update(@RequestBody Account newData, @PathVariable Integer id);
+    public ResponseEntity<Account> Update(@RequestBody Account obj, @PathVariable Integer id);
 
     @RequestMapping(method = RequestMethod.GET)
     public ResponseEntity<Account> AllAccounts();

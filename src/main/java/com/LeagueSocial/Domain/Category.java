@@ -19,8 +19,6 @@ import lombok.*;
 @NoArgsConstructor
 @RequiredArgsConstructor
 @AllArgsConstructor
-@Getter
-@Setter
 @Data
 public class Category implements Serializable{
 	private static final long serialVersionUID = 1L;

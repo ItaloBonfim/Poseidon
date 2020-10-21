@@ -18,14 +18,15 @@ public interface AssociatesRepository extends JpaRepository<Associates, Integer>
     @Query("select obj From Associations obj where obj.target.id = :id")
    public List<Associates> AllFollowMe(@Param("id") Integer id);
 
-
     @Query(value = "select * From Associations ass where ass.pk_user = :user and ass.pk_target = :target", nativeQuery = true)
     public Optional<Associates> SelectLine(@Param("user") Integer user, @Param("target") Integer target);
 
-    //@Transactional
-    //@Modifying
+    @Transactional
+    @Modifying
     @Query(value = "delete from Associations as obj where obj.pk_user = :user and obj.pk_target = :target", nativeQuery = true)
     public void DeleteAssociate(@Param("user") Integer user, @Param("target") Integer target);
 
+    @Query(value = "select count(*) from Associations as obj where obj.pk_user = :user and obj.pk_target = :target", nativeQuery = true)
+    public Integer CountAssociations(@Param("user") Integer user, @Param("target") Integer target);
 
 }

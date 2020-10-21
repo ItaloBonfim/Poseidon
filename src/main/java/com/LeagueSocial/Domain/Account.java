@@ -5,33 +5,30 @@ import java.util.*;
 
 import javax.persistence.*;
 
+import com.LeagueSocial.DTO.AccountDTO;
+import com.LeagueSocial.DTO.SubfieldsDTO.AccountSummaryDTO;
 import com.LeagueSocial.Domain.enums.KindSex;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
-
 
 
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
 @RequiredArgsConstructor
-@Getter
-@Setter
 @Data
 public class Account implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "pk_user")
 	private Integer id;
-	@NonNull
-	private String name;
-	@NonNull
-	private String username;
 
 	@NonNull
-	private Integer kind;// Codigo de genero no pacote Enums / estudar a viabilidade do campo de genero sexual
+	private String name;
+
+	@NonNull
+	private Integer kind;
 
 	@NonNull
 	private String email;
@@ -46,12 +43,35 @@ public class Account implements Serializable {
 	@CollectionTable(name = "telephone")
 	private Set<String> telephone = new HashSet<>();
 
+	//como tipo de usuario seguindo
+	@JsonIgnore
+	@OneToMany(mappedBy = "user", orphanRemoval = true)
+	private List<Associates> ass = new ArrayList<>();
 
+	//como tipo de usuario seguido
+	@JsonIgnore
+	@OneToMany(mappedBy = "target", orphanRemoval = true)
+	private List<Associates> ons = new ArrayList<>();
+
+	@JsonIgnore
+	@ManyToMany(mappedBy = "user")
+	private List<Publication> publications = new ArrayList<>();
+	
 	public void setSexualType(KindSex typeS){
 		this.kind = typeS.getCod();
 	}
 	public KindSex getSexualType(){
 		return KindSex.toEnum(kind);
+	}
+
+
+	public List<AccountSummaryDTO> ReturnSummary(Account userContent){
+		AccountSummaryDTO content = new AccountSummaryDTO(userContent);
+
+		List<AccountSummaryDTO> summaryDTO = new ArrayList<>();
+		summaryDTO.add(content);
+
+		return summaryDTO;
 	}
 
 	@Override

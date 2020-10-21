@@ -14,11 +14,10 @@ public interface AssociatesProfileService {
 
     public Associates InsertData(AssociatesDTO obj);
 
-    public void DeleteDate(Integer user, Integer target);
+    public void DeleteDate(AssociatesDTO obj);
 
     public Associates UpdateData(Associates obj);
 
     public Page<Associates> PaginationFilter(Integer page, Integer linesPerPage, String orderBy, String direction);
 
-    public Associates ExtendUpdateData(Associates Obj);
 }

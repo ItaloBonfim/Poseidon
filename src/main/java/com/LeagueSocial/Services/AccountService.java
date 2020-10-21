@@ -3,8 +3,10 @@ package com.LeagueSocial.Services;
 
 import java.text.SimpleDateFormat;
 import java.util.Optional;
+import java.util.function.Consumer;
 
 import com.LeagueSocial.Domain.Account;
+import com.LeagueSocial.Domain.Publication;
 import com.LeagueSocial.Services.Exceptions.DataIntegrityException;
 import com.LeagueSocial.Services.Exceptions.ObjectNotFoundException;
 import com.LeagueSocial.Services.Profile.AccountProfileService;
@@ -25,8 +27,7 @@ public class AccountService implements AccountProfileService {
 	@Autowired
 	private AccountRepository repo;
 	SimpleDateFormat sdf =  new SimpleDateFormat("dd/MM/yyyy");
-
-
+	
 	@Override
 	public Account SelectDate(Integer id) {
 
@@ -38,12 +39,17 @@ public class AccountService implements AccountProfileService {
 
 	@Override
 	public Account InsertData(Account obj) {
-		obj.setId(null);
-		Account toSave = new Account(obj.getName(),obj.getUsername(),obj.getSexualType().getCod(),obj.getEmail(),obj.getPassword());
-		return repo.save(toSave);
-	//	return repo.save(obj);
+		/* Para esse método, temos que verificar se:
+			Algum parametro pode retornar NullPointer e tratar
+			Se Username já existe e está em uso
+			Se Email existe e já está em uso
+			E talvez o mais complicado, o delete deve exlcuir todas as associações também
+		 */
 
-		//return null;
+		Account toSave = new Account(obj.getName(),obj.getKind(),obj.getEmail(),obj.getPassword());
+		toSave.getSexualType();
+
+		return repo.save(toSave);
 	}
 
 	@Override
@@ -52,29 +58,28 @@ public class AccountService implements AccountProfileService {
 		try {
 			repo.deleteById(id);
 		}catch (DataIntegrityViolationException e){
-			throw new DataIntegrityException("The account has pendent associations, please verify and try again");
+			throw new DataIntegrityException("The account has pendent associations, please verify and try again: " + e);
 		}
 	}
 
 	@Override
-	public Account UpdateData(Account obj) {
+	public Account UpdateData(Account obj, Integer id) {
 
-		Account up = SelectDate(obj.getId());
+		Account updateInfo = SelectDate(id);
 
-		up.setName(obj.getName());
-		up.setUsername(obj.getUsername());
-		up.setPassword(obj.getPassword());
-		up.setSexualType(obj.getSexualType());
-		up.setDescription(obj.getDescription());
+		//METODO PRECECISA SER REFEITO
+		
+		updateInfo.setName(obj.getName());
+		updateInfo.setKind(obj.getKind());
+		updateInfo.getSexualType();
+		updateInfo.setDescription(obj.getDescription());
 
-		System.out.println(up.toString());
-		return repo.save(up);
+
+
+		return repo.save(updateInfo);
 		//return null;
-	}
-
-	@Override
-	public Account AllAccounts() {
-		return null;
+		//metodo especial para isso
+		//updateInfo.setPassword(obj.getPassword());
 	}
 
 	@Override
@@ -82,8 +87,6 @@ public class AccountService implements AccountProfileService {
 		return null;
 	}
 
-	@Override
-	public Account ExtendUpdateData(Account Obj) {
-		return null;
-	}
+
+
 }

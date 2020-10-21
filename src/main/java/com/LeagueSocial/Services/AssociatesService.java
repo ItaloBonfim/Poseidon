@@ -5,13 +5,13 @@ import com.LeagueSocial.Domain.Account;
 import com.LeagueSocial.Domain.Associates;
 import com.LeagueSocial.Repositories.AccountRepository;
 import com.LeagueSocial.Repositories.AssociatesRepository;
-import com.LeagueSocial.Services.Exceptions.DataIntegrityException;
+import com.LeagueSocial.Services.Exceptions.*;
 import com.LeagueSocial.Services.Exceptions.IllegalArgumentException;
 import com.LeagueSocial.Services.Exceptions.NullPointerException;
-import com.LeagueSocial.Services.Exceptions.ObjectNotFoundException;
 import com.LeagueSocial.Services.Profile.AssociatesProfileService;
+import com.LeagueSocial.Services.utils.AssociatesUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.dao.DuplicateKeyException;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 
@@ -26,13 +26,12 @@ public class AssociatesService implements AssociatesProfileService {
     private AssociatesRepository repo;
     @Autowired
     private AccountRepository repoAcc;
+    @Autowired
+    AssociatesUtils utils;
 
     @Override
     public List<Associates> FallowMe(Integer id) {
-
-        Account obj = IdentifyAccount(id);
-        List<Associates> list = repo.AllFollow(obj.getId());
-
+        List<Associates> list = repo.AllFollow(id);
         return list;
     }
 
@@ -40,7 +39,6 @@ public class AssociatesService implements AssociatesProfileService {
     public List<Associates> Track(Integer id) {
 
         List<Associates> list = repo.AllFollowMe(id);
-
         return list;
     }
 
@@ -53,27 +51,24 @@ public class AssociatesService implements AssociatesProfileService {
         - caso NÃO existir, criar uma nova associação
          */
 
-        try{
-            Associates ass = CreateAssociation(obj);
-            return repo.save(ass);
-        }
-        catch (DataIntegrityViolationException e){
-            throw new DataIntegrityException("Associação já existe: ");
-        }
-        catch (ObjectNotFoundException e){
-            throw new ObjectNotFoundException("Contas não identificadas");
-        }
+        Associates relation = utils.CreateAssociatesWithEntities(obj);
+        return repo.save(relation);
+
     }
 
+
     @Override
-    public void DeleteDate(Integer user, Integer target) {
+    public void DeleteDate(AssociatesDTO obj) {
         /*
         - Para deletar uma associação, é necessario verificar se ela existe
         - Se não existe uma associação, retorna uma mensagem personalizada
         - Caso Existe uma associação, segue o fluxo e então realizar o delete
          */
-        Associates obj = SelectAssociation(user, target); // chamada da @Query
-        repo.DeleteAssociate(user,target);
+        if(!utils.CheckExistingAssociation(obj)) {
+            repo.DeleteAssociate(obj.getUser(), obj.getTarget());
+        }else{
+            throw new ObjectNotFoundException("no associations!");
+        }
     }
 
     @Override
@@ -92,42 +87,4 @@ public class AssociatesService implements AssociatesProfileService {
         return null;
     }
 
-    @Override
-    public Associates ExtendUpdateData(Associates Obj) {
-        return null;
-    }
-
-    private Account IdentifyAccount(Integer id){
-        Optional<Account> obj = repoAcc.findById(id);
-
-        return obj.orElseThrow(() -> new ObjectNotFoundException(
-                "User with ID: "+id+" Not found. Type: " + Account.class.getName()));
-    }
-
-    private Associates CreateAssociation(AssociatesDTO obj){
-
-        Account obj1 = IdentifyAccount(obj.getUser());
-        Account obj2 = IdentifyAccount(obj.getTarget());
-
-        try {
-            Associates ass = new Associates(obj1, obj2, obj.getBlocked());
-            return ass;
-        }
-        catch (java.lang.NullPointerException e){
-            throw new NullPointerException("Arguments can not be null!");
-        }
-        catch (java.lang.IllegalArgumentException e){
-            throw new IllegalArgumentException("Arguments can not be null!");
-        }
-    }
-
-    private Associates SelectAssociation(Integer user, Integer target){
-        try {
-           Optional <Associates> obj = repo.SelectLine(user, target);
-            return obj.orElseThrow(() -> new ObjectNotFoundException("Não há associações para os ID's informadors em: "+ Associates.class.getName()));
-        }
-        catch (java.lang.NullPointerException e){
-            throw new NullPointerException("Valores não informados ou incorretos");
-        }
-    }
 }
