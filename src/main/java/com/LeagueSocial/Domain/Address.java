@@ -14,11 +14,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 @Entity
-@NoArgsConstructor
-@AllArgsConstructor
-@Getter
-@Setter
-@Data
 public class Address implements Serializable{
 	private static final long serialVersionUID = 1L;
 
@@ -30,6 +25,16 @@ public class Address implements Serializable{
 	private String number;
 	private String district;
 	private String complement;
+
+	public Address(){}
+
+	public Address(String street, String zipCode, String number, String district, String complement){
+		this.street = street;
+		this.zipCode = zipCode;
+		this.number = number;
+		this.district = district;
+		this.complement = complement;
+	}
 	
 	@JsonIgnore
 	@ManyToOne

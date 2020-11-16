@@ -4,21 +4,12 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.*;
 
 @Entity
-@NoArgsConstructor
-@AllArgsConstructor
-@Getter
-@Setter
-@Data
 public class State implements Serializable{
 	private static final long serialVersionUID = 1L;
 
@@ -28,9 +19,37 @@ public class State implements Serializable{
 	private String name;
 	
 	@JsonBackReference
-	@OneToMany(mappedBy = "state")
+	@OneToMany(mappedBy = "state", cascade = CascadeType.ALL)
 	private List<City> city = new ArrayList<>(); //Array list
-	
+
+	public State(){}
+	public State(String name){
+		this.name = name;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public List<City> getCity() {
+		return city;
+	}
+
+	public void setCity(List<City> city) {
+		this.city = city;
+	}
 
 	@Override
 	public int hashCode() {

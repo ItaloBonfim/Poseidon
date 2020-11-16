@@ -9,30 +9,61 @@ import java.io.Serializable;
 import java.util.Objects;
 
 @Entity(name = "Associations")
-@NoArgsConstructor
-@AllArgsConstructor
-@RequiredArgsConstructor
-@Getter
-@Setter
-@Data
 public class Associates implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @NonNull
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "pk_user")
     private Account user;
 
-    @NonNull
-    @ManyToOne
-    @JoinColumn(name = "pk_target" )//não permite que o sistema cadastre outros target com o mesmo id
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "pk_target")//não permite que o sistema cadastre outros target com o mesmo id
     private Account target;
 
-    @NonNull
     private Boolean isBlocked;
+
+    public Associates(){}
+
+    public Associates(Account user, Account target, Boolean isBlocked){
+        this.user = user;
+        this.target = target;
+        this.isBlocked = isBlocked;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Account getUser() {
+        return user;
+    }
+
+    public void setUser(Account user) {
+        this.user = user;
+    }
+
+    public Account getTarget() {
+        return target;
+    }
+
+    public void setTarget(Account target) {
+        this.target = target;
+    }
+
+    public Boolean getBlocked() {
+        return isBlocked;
+    }
+
+    public void setBlocked(Boolean blocked) {
+        isBlocked = blocked;
+    }
 
     @Override
     public boolean equals(Object o) {

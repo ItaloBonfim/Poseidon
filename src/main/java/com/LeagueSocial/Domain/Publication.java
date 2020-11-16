@@ -3,17 +3,14 @@ package com.LeagueSocial.Domain;
 
 import com.LeagueSocial.DTO.AccountDTO;
 import com.LeagueSocial.DTO.SubfieldsDTO.AccountSummaryDTO;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import lombok.*;
 
-import javax.management.PersistentMBean;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Objects;
-import java.util.stream.Collectors;
+
 
 @Entity
 public class Publication implements Serializable {
@@ -32,8 +29,7 @@ public class Publication implements Serializable {
 
 	private Date date;
 
-	@JsonIgnore
-	@OneToMany(mappedBy = "publication")
+	@OneToMany(mappedBy = "publication", cascade = CascadeType.ALL)
 	private List <Comments> comments = new ArrayList<>();
 
 	private Integer reactions;
@@ -93,7 +89,7 @@ public class Publication implements Serializable {
 		this.comments = comments;
 	}
 
-	public List<AccountSummaryDTO> GiveSummaryAccount(List<Account> accountList){
+	public List<AccountSummaryDTO> UserPublicationContent(List<Account> accountList){
 
 		AccountSummaryDTO obj = new AccountSummaryDTO();
 
@@ -110,7 +106,6 @@ public class Publication implements Serializable {
 
 		return ListOfObject;
 	}
-
 
 	@Override
 	public boolean equals(Object o) {

@@ -1,6 +1,5 @@
 package com.LeagueSocial.Services.utils;
 
-import com.LeagueSocial.DTO.AccountDTO;
 import com.LeagueSocial.DTO.AssociatesDTO;
 import com.LeagueSocial.Domain.Account;
 import com.LeagueSocial.Domain.Associates;
@@ -25,7 +24,7 @@ public class AssociatesUtils {
 
 
     public boolean CheckExistingAssociation(AssociatesDTO obj){
-        return repo.CountAssociations(obj.getUser(), obj.getTarget()) == 0;
+        return repo.CountAssociations(obj.getUser(), obj.getTarget()) != 0;
     }
 
     public Associates CreateAssociatesWithEntities(AssociatesDTO objdto){
@@ -41,6 +40,10 @@ public class AssociatesUtils {
         }else{
             throw new DataIntegrityException("Associação já existe em banco");
         }
+    }
+
+    public Associates VerifyContextAssociation(AssociatesDTO obj){
+        return repo.SelectLine(obj.getUser(), obj.getTarget());
     }
 
 }

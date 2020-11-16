@@ -12,7 +12,7 @@ import org.springframework.data.domain.Page;
 import java.util.Optional;
 import java.util.function.Consumer;
 
-public interface AccountClassPerfil {
+public interface AccountProfileService {
 
     public Account SelectDate(Integer id);
 

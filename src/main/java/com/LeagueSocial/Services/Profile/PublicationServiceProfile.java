@@ -17,4 +17,6 @@ public interface PublicationServiceProfile {
 
     public Page<Publication> SelectAllPublishers
             (Integer page, Integer linesPerPage, String orderBy, String direction);
+
+    public Publication PublicationExist(Integer id);
 }

@@ -1,8 +1,9 @@
 package com.LeagueSocial.DTO;
 
-import com.LeagueSocial.Domain.Account;
+
 import com.LeagueSocial.Domain.Publication;
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.LeagueSocial.Resources.Profile.CommentsProfileResource;
+import com.LeagueSocial.Services.Profile.CommentsProfileService;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -17,6 +18,7 @@ public class PublicationDTO implements Serializable {
     private Integer userIdentity;
     private List<?> userContent; // aceeso direto aos atributos do usuario
 
+
     public PublicationDTO(){}
 
     public PublicationDTO(Publication obj){
@@ -24,8 +26,9 @@ public class PublicationDTO implements Serializable {
         this.message = obj.getMessage();
         this.date = obj.getDate();
 
-        this.userContent = obj.getUser(); // aceeso direto aos atributos do usuario
-        this.userContent = obj.GiveSummaryAccount(obj.getUser());
+        this.userContent = obj.UserPublicationContent(obj.getUser()); //funcional
+
+        //this.commentsList = obj.getComments();
     }
 
     public PublicationDTO(Integer userIdentity, String content){
@@ -72,4 +75,5 @@ public class PublicationDTO implements Serializable {
     public void setUserContent(List<?> userContent) {
         this.userContent = userContent;
     }
+
 }

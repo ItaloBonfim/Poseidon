@@ -15,38 +15,78 @@
   <component name="ChangeListManager">
     <list default="true" id="ed6d9458-443a-449c-9334-13e7f2dc367d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeagueSocial.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LeagueSocial.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/DTO/AccountDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/DTO/AccountDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/DTO/PublicationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/DTO/PublicationDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/DTO/utils/MenagerUserData.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Domain/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Domain/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Domain/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Domain/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Domain/Associates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Domain/Associates.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Domain/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Domain/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Domain/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Domain/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Domain/Comments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Domain/Comments.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Domain/Publication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Domain/Publication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Domain/util/Login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Domain/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Domain/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/LeagueSocialApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/LeagueSocialApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Repositories/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Repositories/AccountRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Repositories/AddressRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Repositories/AddressRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Repositories/AssociatesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Repositories/AssociatesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Repositories/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Repositories/CategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Repositories/CityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Repositories/CityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Repositories/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Repositories/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Repositories/PublicationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Repositories/PublicationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Repositories/StateRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Repositories/StateRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Resources/AccountResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Resources/AccountResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Resources/AssociatesResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Resources/AssociatesResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Resources/CategoryResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Resources/CategoryResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Resources/Exceptions/ResourceExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Resources/Exceptions/ResourceExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Resources/Profile/AccountProfileResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Resources/Profile/AccountProfileResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Resources/Profile/CategoryProfileResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Resources/Profile/CategoryProfileResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Resources/Profile/ProductProfileResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Resources/Profile/ProductProfileResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Resources/PublicationResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Resources/PublicationResources.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Services/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Services/AccountService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Services/AssociatesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Services/AssociatesService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Services/Profile/AccountProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Services/Profile/AccountProfileService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Services/Profile/AssociatesProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Services/Profile/AssociatesProfileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Services/Profile/PublicationServiceProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Services/Profile/PublicationServiceProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Services/publicationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Services/publicationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Services/utils/AssociatesUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Services/utils/AssociatesUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Services/utils/PublicationUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LeagueSocial/Services/utils/PublicationUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/DTO/AccountDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/DTO/AccountDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/DTO/PublicationDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/DTO/PublicationDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/DTO/utils/MenagerUserData.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Domain/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Domain/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Domain/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Domain/Address.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Domain/Associates.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Domain/Associates.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Domain/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Domain/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Domain/City.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Domain/City.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Domain/Comments.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Domain/Comments.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Domain/Publication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Domain/Publication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Domain/util/Login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Domain/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Domain/State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/LeagueSocialApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/LeagueSocialApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Repositories/AccountRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Repositories/AccountRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Repositories/AddressRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Repositories/AddressRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Repositories/AssociatesRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Repositories/AssociatesRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Repositories/CategoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Repositories/CategoryRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Repositories/CityRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Repositories/CityRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Repositories/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Repositories/ProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Repositories/PublicationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Repositories/PublicationRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Repositories/StateRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Repositories/StateRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Resources/AccountResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Resources/AccountResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Resources/AssociatesResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Resources/AssociatesResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Resources/CategoryResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Resources/CategoryResource.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Resources/Exceptions/ResourceExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Resources/Exceptions/ResourceExceptionHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Resources/Profile/AccountProfileResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Resources/Profile/AccountProfileResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Resources/Profile/CategoryProfileResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Resources/Profile/CategoryProfileResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Resources/Profile/ProductProfileResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Resources/Profile/ProductProfileResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Resources/PublicationResources.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Resources/PublicationResources.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Services/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Services/AccountService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Services/AssociatesService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Services/AssociatesService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Services/Profile/AccountProfileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Services/Profile/AccountProfileService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Services/Profile/AssociatesProfileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Services/Profile/AssociatesProfileService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Services/Profile/PublicationServiceProfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Services/Profile/PublicationServiceProfile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Services/publicationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Services/publicationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Services/utils/AssociatesUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Services/utils/AssociatesUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Services/utils/PublicationUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LeagueSocial/Services/utils/PublicationUtils.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +96,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -88,7 +129,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="D:/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -96,8 +137,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.LeagueSocial.Services.Exceptions" />
+      <recent name="com.LeagueSocial.Domain.enums" />
+      <recent name="com.LeagueSocial.Config" />
       <recent name="com.LeagueSocial.Services.Profile" />
       <recent name="com.LeagueSocial.Resources.Profile" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nsouz\Desktop\Developer Projects\TCC\poseidon\src\main\resources" />
     </key>
   </component>
   <component name="RunManager">
@@ -147,23 +194,28 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1603058937937">
+    <state x="488" y="48" width="827" height="569" key="#com.intellij.ide.util.MemberChooser" timestamp="1604868678370">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1603058937937" />
+    <state x="488" y="48" width="827" height="569" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1604868678370" />
+    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1604847912768" />
     <state x="363" y="101" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600532137336">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="101" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1600532137336" />
-    <state x="266" y="290" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1603072477069">
+    <state x="266" y="290" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1604771690028">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="266" y="290" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1603072477069" />
+    <state x="266" y="290" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1604771690028" />
     <state x="266" y="290" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1600023175905" />
-    <state x="72" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1599845974542">
+    <state x="466" y="234" width="433" height="265" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1604847526371">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="72" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1599845974542" />
+    <state x="466" y="234" width="433" height="265" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1604847526371" />
+    <state x="352" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604883845559">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="352" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1604883845559" />
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602995479065">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -172,62 +224,62 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="406" height="438" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1597970233387" />
-    <state x="129" y="55" width="1092" height="610" maximized="true" key="DiffContextDialog" timestamp="1601515096771">
+    <state x="129" y="55" width="1092" height="610" maximized="true" key="DiffContextDialog" timestamp="1604345078642">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="129" y="55" width="1092" height="610" maximized="true" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1601515096771" />
+    <state x="129" y="55" width="1092" height="610" maximized="true" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1604345078642" />
     <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1600011059718">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1600011059718" />
-    <state width="1323" height="123" key="GridCell.Tab.0.bottom" timestamp="1603243053443">
+    <state width="1323" height="253" key="GridCell.Tab.0.bottom" timestamp="1604888082051">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="123" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1603243053443" />
-    <state width="1323" height="232" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603059773920" />
-    <state width="1323" height="123" key="GridCell.Tab.0.center" timestamp="1603243053443">
+    <state width="1323" height="181" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1604879939851" />
+    <state width="1323" height="253" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1604888082051" />
+    <state width="1323" height="253" key="GridCell.Tab.0.center" timestamp="1604888082051">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="123" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1603243053443" />
-    <state width="1323" height="232" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1603059773920" />
-    <state width="1323" height="123" key="GridCell.Tab.0.left" timestamp="1603243053443">
+    <state width="1323" height="181" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1604879939851" />
+    <state width="1323" height="253" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1604888082051" />
+    <state width="1323" height="253" key="GridCell.Tab.0.left" timestamp="1604888082051">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="123" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1603243053443" />
-    <state width="1323" height="232" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1603059773920" />
-    <state width="1323" height="123" key="GridCell.Tab.0.right" timestamp="1603243053443">
+    <state width="1323" height="181" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1604879939851" />
+    <state width="1323" height="253" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1604888082051" />
+    <state width="1323" height="253" key="GridCell.Tab.0.right" timestamp="1604888082051">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="123" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1603243053443" />
-    <state width="1323" height="232" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603059773920" />
-    <state width="1323" height="244" key="GridCell.Tab.1.bottom" timestamp="1601340631236">
+    <state width="1323" height="181" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1604879939851" />
+    <state width="1323" height="253" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1604888082051" />
+    <state width="1323" height="253" key="GridCell.Tab.1.bottom" timestamp="1604888082051">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="244" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601340631236" />
-    <state width="1323" height="244" key="GridCell.Tab.1.center" timestamp="1601340631236">
+    <state width="1323" height="253" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1604871165069" />
+    <state width="1323" height="253" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1604888082051" />
+    <state width="1323" height="253" key="GridCell.Tab.1.center" timestamp="1604888082051">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="244" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1601340631236" />
-    <state width="1323" height="244" key="GridCell.Tab.1.left" timestamp="1601340631236">
+    <state width="1323" height="253" key="GridCell.Tab.1.center/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1604871165069" />
+    <state width="1323" height="253" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1604888082051" />
+    <state width="1323" height="253" key="GridCell.Tab.1.left" timestamp="1604888082051">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="244" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1601340631236" />
-    <state width="1323" height="244" key="GridCell.Tab.1.right" timestamp="1601340631236">
+    <state width="1323" height="253" key="GridCell.Tab.1.left/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1604871165069" />
+    <state width="1323" height="253" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1604888082051" />
+    <state width="1323" height="253" key="GridCell.Tab.1.right" timestamp="1604888082051">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="244" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1601340631236" />
+    <state width="1323" height="253" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1604871165069" />
+    <state width="1323" height="253" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1604888082051" />
     <state x="263" y="99" key="IDE.errors.dialog" timestamp="1598567622889">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="263" y="99" key="IDE.errors.dialog/0.0.1366.728@0.0.1366.728" timestamp="1598567622889" />
-    <state x="397" y="72" key="RollbackChangesDialog" timestamp="1601515100188">
+    <state x="397" y="72" key="RollbackChangesDialog" timestamp="1604345080938">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="397" y="72" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1601515100188" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1595708733179">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1595708733179" />
+    <state x="397" y="72" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1604345080938" />
     <state x="293" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1599855991004">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -236,9 +288,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="495" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1598923315426" />
-    <state x="246" y="0" width="871" height="716" key="dock-window-1" timestamp="1601512509765">
+    <state x="157" y="99" width="1051" height="618" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1604196290293">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="157" y="99" width="1051" height="618" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1604196290293" />
+    <state x="403" y="61" width="957" height="716" key="dock-window-1" timestamp="1604012144768">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="403" y="61" width="957" height="716" key="dock-window-1/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1604012144768" />
     <state x="246" y="0" width="871" height="716" key="dock-window-1/0.0.1366.728@0.0.1366.728" timestamp="1601512509765" />
     <state x="274" y="0" key="new project wizard" timestamp="1600011073444">
       <screen x="0" y="0" width="1366" height="728" />
@@ -248,20 +305,34 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="459" y="123" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1601603627152" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1595785314734">
+    <state x="339" y="162" key="run.anything.popup" timestamp="1604364731515">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1595785314734" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1603065464436">
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1604364731515" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1604363327977">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1603065464436" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1604363327977" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1601266402843" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/LeagueSocial/Resources/CommentsResource.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.springframework.beans.factory.BeanCreationException" package="org.springframework.beans.factory" />
+          <option name="timeStamp" value="13" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo />
+        <PinnedItemInfo parentTag="com.LeagueSocial.Services.AccountService" memberName="sdf" />
       </pinned-members>
     </pin-to-top-manager>
   </component>

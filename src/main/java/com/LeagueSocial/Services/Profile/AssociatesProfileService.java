@@ -16,7 +16,7 @@ public interface AssociatesProfileService {
 
     public void DeleteDate(AssociatesDTO obj);
 
-    public Associates UpdateData(Associates obj);
+    public Associates BlockUser(AssociatesDTO obj);
 
     public Page<Associates> PaginationFilter(Integer page, Integer linesPerPage, String orderBy, String direction);
 

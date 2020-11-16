@@ -1,10 +1,8 @@
 package com.LeagueSocial.Services;
 
-import com.LeagueSocial.DTO.AccountDTO;
 import com.LeagueSocial.DTO.PublicationDTO;
 import com.LeagueSocial.Domain.Account;
 import com.LeagueSocial.Domain.Publication;
-import com.LeagueSocial.Repositories.AccountRepository;
 import com.LeagueSocial.Repositories.PublicationRepository;
 import com.LeagueSocial.Services.Exceptions.ObjectNotFoundException;
 import com.LeagueSocial.Services.Profile.AccountProfileService;
@@ -16,22 +14,16 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
-import java.util.function.Consumer;
+import java.util.Optional;
 
 
 @Service
 public class publicationService implements PublicationServiceProfile {
 
-    @Autowired
-    private PublicationRepository repo;
-    @Autowired
-    private PublicationUtils suported;
-    @Autowired
-    private AccountProfileService extSuported;
-
+    @Autowired private PublicationRepository repo;
+    @Autowired private PublicationUtils suported;
+    @Autowired private AccountProfileService extSuported;
 
     @Override
     public Page<Publication> SelectAllUserPublishers
@@ -79,6 +71,13 @@ public class publicationService implements PublicationServiceProfile {
 
         Page<Publication> publishersRequest = repo.RandomPublishers(pageRequest);
         return publishersRequest;
+    }
+
+    @Override
+    public Publication PublicationExist(Integer id) {
+
+        Optional<Publication> obj = repo.findById(id);
+        return obj.orElseThrow(() -> new ObjectNotFoundException("Publications with this Identifer " + id + "not found in " + Publication.class.getName() ));
     }
 
 }

@@ -16,6 +16,8 @@ import java.util.List;
 @Service
 public class PublicationUtils  {
 
+    public PublicationUtils(){}
+
     public Date getTime(){
         SimpleDateFormat mask = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         try {

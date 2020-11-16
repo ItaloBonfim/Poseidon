@@ -6,9 +6,13 @@ package com.LeagueSocial.Resources.Profile;
 */
 
 import com.LeagueSocial.DTO.AccountDTO;
+import com.LeagueSocial.DTO.UserAuthenticateDTO;
 import com.LeagueSocial.Domain.Account;
 import org.springframework.data.domain.Page;
+import org.springframework.data.repository.query.Param;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 public interface AccountProfileResource {
@@ -17,7 +21,7 @@ public interface AccountProfileResource {
     public ResponseEntity<Account> Select(@PathVariable Integer id);
 
     @RequestMapping(method = RequestMethod.POST)
-    public ResponseEntity<Account> Insert(@RequestBody Account obj);
+    public ResponseEntity<Account> Insert(@RequestBody AccountDTO obj);
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     public ResponseEntity<Account> Delete(@PathVariable Integer id);

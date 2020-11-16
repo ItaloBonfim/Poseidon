@@ -6,9 +6,11 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public interface PublicationRepository extends JpaRepository<Publication, Integer> {
 
     @Query("SELECT DISTINCT obj FROM Publication obj INNER JOIN obj.user us where us.id = :id")

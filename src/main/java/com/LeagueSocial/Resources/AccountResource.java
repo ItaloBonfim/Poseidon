@@ -9,7 +9,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.LeagueSocial.Services.AccountService;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
@@ -37,7 +36,7 @@ public class AccountResource implements AccountProfileResource {
 	}
 
 	@Override
-	public ResponseEntity<Account> Insert(Account obj) {
+	public ResponseEntity<Account> Insert(AccountDTO obj) {
 
 		Account register = objective.InsertData(obj);
 
@@ -45,8 +44,6 @@ public class AccountResource implements AccountProfileResource {
 				.path("/{id}").buildAndExpand(register.getId()).toUri();
 
 		return ResponseEntity.created(uri).build();
-
-
 	}
 
 	@Override

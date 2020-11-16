@@ -2,6 +2,7 @@ package com.LeagueSocial.Resources.Exceptions;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.LeagueSocial.Services.Exceptions.AuthorizationException;
 import com.LeagueSocial.Services.Exceptions.DataIntegrityException;
 import com.LeagueSocial.Services.Exceptions.NullPointerException;
 import org.springframework.dao.DuplicateKeyException;
@@ -96,5 +97,15 @@ public class ResourceExceptionHandler {
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(err);
 	}
 
+	@ExceptionHandler(AuthorizationException.class)
+	public ResponseEntity<StandardError> AuthorizationException(AuthorizationException e,
+														HttpServletRequest request){
+
+		StandardError err = new StandardError(HttpStatus.FORBIDDEN.value(), e.getMessage(),
+				System.currentTimeMillis());
+
+		return ResponseEntity.status(HttpStatus.FORBIDDEN).body(err);
+
+	}
 
 }

@@ -1,17 +1,14 @@
 package com.LeagueSocial.Resources;
 
-import com.LeagueSocial.DTO.AccountDTO;
 import com.LeagueSocial.DTO.PublicationDTO;
 import com.LeagueSocial.Domain.Publication;
 import com.LeagueSocial.Resources.Profile.PublicationProfileResource;
-import com.LeagueSocial.Services.Profile.AccountProfileService;
+import com.LeagueSocial.Services.Profile.CommentsProfileService;
 import com.LeagueSocial.Services.Profile.PublicationServiceProfile;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
@@ -21,8 +18,8 @@ import java.net.URI;
 @RequestMapping(value = "publications/")
 public class PublicationResources implements PublicationProfileResource {
 
-    @Autowired
-    private PublicationServiceProfile objective;
+    @Autowired private PublicationServiceProfile objective;
+    @Autowired private CommentsProfileService comments;
 
 
     @Override
@@ -32,14 +29,13 @@ public class PublicationResources implements PublicationProfileResource {
         Page<Publication> publications = objective.SelectAllUserPublishers
                 (user,page,linesPerPage,orderBy,direction); //chamada de metodo
 
+        
         //converter um PAGE PUBLICATION para um PAGE PUBLICATION_DTO
         Page<PublicationDTO> publicationDTO = publications.map(obj -> new PublicationDTO(obj));
 
         //Retorno
         return ResponseEntity.ok().body(publicationDTO);
     }
-
-
 
     @Override
     public ResponseEntity<Publication> DeleteUserPublication(Integer id) {

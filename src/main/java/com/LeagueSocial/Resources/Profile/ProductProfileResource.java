@@ -9,6 +9,7 @@ import com.LeagueSocial.DTO.ProductDTO;
 import com.LeagueSocial.Domain.Product;
 import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 public interface ProductProfileResource {
@@ -16,12 +17,15 @@ public interface ProductProfileResource {
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public ResponseEntity<Product> Select(@PathVariable Integer id);
 
+    @PreAuthorize("hasAnyRole('ADMIN')")//only admin acess
     @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<Product> Insert(@RequestBody Product obj);
 
+    @PreAuthorize("hasAnyRole('ADMIN')")//only admin acess
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     public ResponseEntity<Product> Delete(@PathVariable Integer id);
 
+    @PreAuthorize("hasAnyRole('ADMIN')")//only admin acess
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
     public ResponseEntity<Product> Update(@RequestBody ProductDTO id, @PathVariable Integer obj);
 
